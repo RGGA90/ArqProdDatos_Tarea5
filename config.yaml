@@ -1,0 +1,29 @@
+#### PARAMETRIZACION DE RUTAS
+
+# RUTAS
+directorio_datos: ../Datos
+directorio_predicciones: ../Resultados
+directorio_logs: ../logs
+datos_entrenamiento: train.csv
+datos_test: test.csv
+archivo_logging: results.log
+preprocesamiento: ../modelos/preprocesamiento.pkl
+directorio_resultados: ../Resultados
+predicciones: predicciones.csv
+
+#PARAMETROS
+variable_dependiente: 'SalePrice'
+variables_eliminar: ["Id","LotShape","LandSlope","ExterQual","BsmtFinType1","BsmtFinType2","HeatingQC",
+           "CentralAir","KitchenQual","Functional","FireplaceQu","GarageFinish","GarageQual",
+           "GarageCond","PavedDrive","PoolQC","Fence","BsmtQual","BsmtCond","ExterCond","ExterQual","KitchenQual","ARTIFICIAL"]
+variables_numericas: ["LotFrontage","LotArea","OverallQual","OverallCond","YearBuilt","YearRemodAdd",
+           "MasVnrArea","BsmtFinSF1","BsmtFinSF2","BsmtUnfSF","TotalBsmtSF","1stFlrSF",
+          "2ndFlrSF","LowQualFinSF","GrLivArea","BsmtFullBath","BsmtHalfBath","FullBath",
+          "HalfBath","BedroomAbvGr","KitchenAbvGr","TotRmsAbvGrd","Fireplaces","GarageYrBlt",
+          "GarageCars","GarageArea","WoodDeckSF","OpenPorchSF","EnclosedPorch","3SsnPorch",
+           "ScreenPorch","PoolArea","MiscVal","YrSold","MoSold"]
+
+variables_categoricas: ["MSSubClass","MSZoning","Street","Alley","LandContour","Utilities",
+            "LotConfig","Neighborhood","Condition1","Condition2","BldgType",
+            "HouseStyle","RoofStyle","RoofMatl","Exterior1st","Exterior2nd","MasVnrType",
+            "Foundation","Heating","Electrical","GarageType","MiscFeature","SaleType","SaleCondition"]
